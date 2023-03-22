@@ -4,6 +4,8 @@ services:
   postgres-db:
     image: postgres
     restart: always
+    ports:
+      - 3025:3000
     environment:
       POSTGRES_DB: metabase
       POSTGRES_USER: postgres
