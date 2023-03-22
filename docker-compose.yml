@@ -16,8 +16,6 @@ services:
   metabase-app:
     image: metabase/metabase
     restart: always
-    ports:
-      - 3025:3000
     volumes:
       # declare your mount volume /host/dir:/container/dir
       - metabase-data:/metabase-data
