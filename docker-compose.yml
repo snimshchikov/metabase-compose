@@ -5,6 +5,8 @@ services:
     image: postgres
     restart: always
     environment:
+      POSTGRES_DB: metabase
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       PGDATA: /var/lib/postgresql/data
     volumes:
