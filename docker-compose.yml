@@ -18,7 +18,7 @@ services:
     restart: always
     volumes:
       # declare your mount volume /host/dir:/container/dir
-      - metabase-data:/metabase-data
+      - metabase-data:/app/metabase-data
     environment:
       MB_DB_TYPE: postgres
       MB_DB_DBNAME: metabase
