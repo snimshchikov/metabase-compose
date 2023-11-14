@@ -2,7 +2,7 @@ version: "3"
 services:
 
   postgres-db:
-    image: postgres:15
+    image: postgres:15.4
     restart: always
     environment:
       POSTGRES_DB: metabase
